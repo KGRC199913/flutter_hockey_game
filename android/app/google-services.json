@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "691449231042",
+    "firebase_url": "https://flutterhockeygame.firebaseio.com",
+    "project_id": "flutterhockeygame",
+    "storage_bucket": "flutterhockeygame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691449231042:android:d768a37119c7d4efa4ed5b",
+        "android_client_info": {
+          "package_name": "com.neko.flutter_hockey_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691449231042-52sf1ircum1voq66475kflbm5u6dfr32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neko.flutter_hockey_game",
+            "certificate_hash": "fb9ce65c82731f605f0366cd93a8d78ca5a53d51"
+          }
+        },
+        {
+          "client_id": "691449231042-crqn3nooa8kg9ri89mo74sdhsdtf2be2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNciDpa0OKxm_IYLzhUanKrOLp1RhyiQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691449231042-crqn3nooa8kg9ri89mo74sdhsdtf2be2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
