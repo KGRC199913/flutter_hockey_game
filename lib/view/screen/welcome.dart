@@ -21,6 +21,7 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     signUpLogic.signUpStatus.listen((data) {
+      Navigator.of(context).pop();
       if (data is SignUpError) {
         showDialog(
             context: context,
@@ -36,12 +37,13 @@ class _WelcomePageState extends State<WelcomePage> {
     });
 
     logInLogic.logInStatus.listen((data) {
+      Navigator.of(context).pop();
       if (data is LogInError) {
         showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              content: Text(data.message),
-            ));
+                  content: Text(data.message),
+                ));
         return;
       }
       Navigator.of(context)
@@ -78,15 +80,31 @@ class _WelcomePageState extends State<WelcomePage> {
               RaisedButton(
                 child: Text("Log in"),
                 onPressed: () {
-                  logInLogic.userBehaviorSubject.add(
-                      User(emailController.text, passwordController.text));
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+
+                        content: Center(
+                          child: CircularProgressIndicator(),
+                        ),
+                      ));
+                  logInLogic.userBehaviorSubject
+                      .add(User(emailController.text, passwordController.text));
                 },
               ),
               RaisedButton(
                 child: Text("Sign up"),
                 onPressed: () {
-                  signUpLogic.userBehaviorSubject.add(
-                      User(emailController.text, passwordController.text));
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+
+                            content: Center(
+                              child: CircularProgressIndicator(),
+                            ),
+                          ));
+                  signUpLogic.userBehaviorSubject
+                      .add(User(emailController.text, passwordController.text));
                 },
               )
             ],
