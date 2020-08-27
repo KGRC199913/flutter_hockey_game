@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hockey_game/view/authen_page.dart';
+import 'package:flutter_hockey_game/view/screen/welcome.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AuthenPage(),
+      home: WelcomePage(),
     );
   }
 }

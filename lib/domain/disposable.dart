@@ -1,0 +1,3 @@
+mixin Disposable {
+  void dispose();
+}
